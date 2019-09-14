@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>贪吃蛇</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/mui.min.css">
+	</head>
+	<body>
+		<div class="box">
+			<!-- 贪吃蛇背景盒子 -->
+			<div class="container">
+				<div class="startgame">
+					<div class="text">
+						<h1>食用方式：</h1>
+						<p>“↑”：向上移动</p>
+						<p>“↓”：向上移动</p>
+						<p>“←”：向左移动</p>
+						<p>“→”：向右移动</p>
+						<p><span style="color: red;font-size: 18px;">注意：</span>超出界外以及咬到自己都算失败</p>
+					</div>
+					<button type="button" class="mui-btn mui-btn-blue">开始游戏</button>
+				</div>
+			</div>
+
+			<div class="gameover">
+				<div class="alert">
+					<p>游戏结束</p>
+					<div class="btn">
+						<button type="button" class="mui-btn mui-btn-blue">再玩一局</button>
+						<input type="button" class="leave" id="leave" value="取消" />
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<script src="js/snake.js"></script>
+		<script src="js/food.js"></script>
+		<script src="js/game.js"></script>
+	</body>
+</html>
